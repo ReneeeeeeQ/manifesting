@@ -1,0 +1,157 @@
+:root {
+  color-scheme: light dark;
+  --text: #1a1a1a;
+  --muted: #5c5c5c;
+  --bg: #fafafa;
+  --card: #ffffff;
+  --border: #e8e8e8;
+  --link: #2563eb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #f2f2f2;
+    --muted: #a3a3a3;
+    --bg: #121212;
+    --card: #1c1c1c;
+    --border: #2e2e2e;
+    --link: #60a5fa;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.wrap {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+header.doc-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+header.doc-header h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+header.doc-header .subtitle {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+nav.back {
+  margin-bottom: 1.25rem;
+}
+
+nav.back a {
+  font-size: 0.9rem;
+  color: var(--link);
+  text-decoration: none;
+}
+
+nav.back a:hover {
+  text-decoration: underline;
+}
+
+section.block {
+  margin-bottom: 2rem;
+}
+
+section.block h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  font-weight: 650;
+}
+
+section.block h3 {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+section.block p,
+section.block li {
+  margin: 0.5rem 0;
+  color: var(--text);
+}
+
+section.block ul {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+}
+
+section.block .note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  padding: 0.75rem 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+hr.sep {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+.lang-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.index-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.index-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.index-card li {
+  margin: 0.75rem 0;
+}
+
+.index-card a {
+  color: var(--link);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.index-card a:hover {
+  text-decoration: underline;
+}
